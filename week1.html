@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Subash | CSE Student & Web Developer</title>
+
+    <meta name="description"
+          content="Personal portfolio of Subash, a CSE student and aspiring web developer.">
+
+    <meta name="keywords"
+          content="Subash, web developer, CSE student, HTML, CSS, JavaScript">
+
+    <meta name="author" content="Subash">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            color: #172554;
+            margin-bottom: 20px;
+        }
+
+        #home {
+            text-align: center;
+            padding: 100px 20px;
+            background: white;
+        }
+
+        #home h2 {
+            font-size: 2.5rem;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #172554;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover,
+        .button:focus {
+            background: #0f172a;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        article {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        article h3 {
+            margin-bottom: 10px;
+            color: #172554;
+        }
+
+        form {
+            max-width: 600px;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #777;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 3px solid #93c5fd;
+            border-color: #172554;
+        }
+
+        button {
+            padding: 12px 20px;
+            background: #172554;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover,
+        button:focus {
+            background: #0f172a;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 10px;
+            background: white;
+            color: black;
+            padding: 8px;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        @media (max-width: 600px) {
+            #home h2 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Skip link for keyboard and screen-reader users -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header>
+        <h1>Subash's Portfolio</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Home -->
+        <section id="home" aria-labelledby="home-heading">
+            <h2 id="home-heading">Hello, I'm Subash</h2>
+
+            <p>
+                I am a Computer Science Engineering student
+                interested in web development and technology.
+            </p>
+
+            <a class="button" href="#projects">
+                View My Projects
+            </a>
+        </section>
+
+        <!-- About -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+
+            <p>
+                I am a CSE student learning web development.
+                I enjoy creating websites and learning new
+                technologies. My goal is to become a skilled
+                full-stack web developer.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">My Skills</h2>
+
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git and GitHub</li>
+                <li>Database Management</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">My Projects</h2>
+
+            <div class="projects">
+
+                <article>
+                    <h3>RC Car</h3>
+                    <p>
+                        An ESP32-based remote control car
+                        project with mobile control.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>DBMS Project</h3>
+                    <p>
+                        A database management project designed
+                        to store and manage application data.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        An accessible and semantic HTML5
+                        personal portfolio website.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+
+            <form action="#" method="post" aria-label="Contact form">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                        aria-required="true"
+                    ></textarea>
+                </div>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Subash. All rights reserved.</p>
+
+        <p>
+            Built using semantic HTML5 and accessibility best practices.
+        </p>
+    </footer>
+
+</body>
+</html>
